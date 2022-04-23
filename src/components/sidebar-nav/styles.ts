@@ -48,6 +48,4 @@ export const Button = styled.a`
     line-height:19px;
     color: #725C5C;
     cursor: pointer;
-
-
 `
