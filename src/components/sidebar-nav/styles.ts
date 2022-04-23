@@ -4,6 +4,8 @@ import styled from "styled-components";
 export const Container = styled.div`
     width: 220px;
     height: 100vh;
+    position: absolute;
+    top: 0;
 
     
     .selected {

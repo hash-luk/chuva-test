@@ -1,11 +1,10 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  position: absolute;
   max-width: 100%;
   padding-right: 36px;
-  height: 80vh;
-  left: 220px;
+  height: 55vh;
+  margin-left: 220px;
   top: 68px;
   right: 0;
   padding: 20px 36px 4px 36px;
