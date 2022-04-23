@@ -1,5 +1,6 @@
 import React from 'react';
 import Discussions from './components/discussions';
+import Footer from './components/footer';
 import Header from './components/header';
 import Main from './components/main-content';
 import Resume from './components/resume';
@@ -12,6 +13,7 @@ function App() {
       <Main />
       <Resume />
       <Discussions />
+      <Footer />
       <SidebarNav />
     </div>
   );
