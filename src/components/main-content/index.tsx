@@ -2,13 +2,30 @@ import * as Styled from './styles'
 import { faDownload,faStar } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import doiIcon from '../../assets/icons/doi.svg'
+import photo from '../../assets/img/photo.png'
+import coverImg from '../../assets/img/dewey1.png'
 
 const Main = () => {
     return(
         <Styled.Container>
             <div className='left-content'>
                 <Styled.Title>Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP </Styled.Title>
-                <div style={{width: "784px",height:"439px",border:"1px solid red"}}></div>
+                <Styled.VideoContainer>
+                    <Styled.VideoTitle>Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP </Styled.VideoTitle>
+                    <Styled.VideoInformation>
+                        <div className="photo">
+                            <div className='outline'>
+                                <img src={photo} alt="Foto do Autor" className='photo'/>
+                            </div>
+                        </div>
+                        <div className="texts">
+                            <p>Beatriz Christiane Melo</p>
+                            <p>FCA / Universidade Estadual de Campinas</p>
+                        </div>
+                    </Styled.VideoInformation>
+                    <div className="filter"></div>
+                    <img  src={coverImg} alt="Video cover" className='videocover'/>
+                </Styled.VideoContainer>
             </div>
             <div className="right-content">
                 <Styled.ButtonsContainer>
