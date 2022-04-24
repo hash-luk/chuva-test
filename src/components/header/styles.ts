@@ -55,8 +55,10 @@ export const RightContent = styled.div`
     gap: 22px;
 
     @media screen and (max-width: 600px) {
-        display: none;
-        width: 100%;
+        display: flex;
+        width: 100px;
+
+
     }
 `
 
@@ -70,6 +72,10 @@ export const SelectInput = styled.select`
     font-size: 14px;
     line-height: 10px;
     color: #333333;
+
+    @media screen and (max-width: 600px) {
+        display: none;
+    }
 `
 
 export const UserInfo = styled.div`
@@ -87,5 +93,11 @@ export const UserInfo = styled.div`
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+    }
+
+    @media screen and (max-width: 600px) {
+        .texts {
+            display: none;
+        }
     }
 `

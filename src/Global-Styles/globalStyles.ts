@@ -10,6 +10,10 @@ export const GlobalStyle = createGlobalStyle`
         text-rendering: optimizeLegibility;
     }
 
+    body {
+        overflow-x: hidden;
+    }
+
     .App {
         position: relative;
     }
