@@ -22,6 +22,13 @@ export const Container = styled.div`
             cursor: pointer;
         }
     }
+
+    @media screen and (max-width: 600px) {
+        margin:0;
+        width: 100%;
+        margin-top: 50px;
+        padding: 5px 5px;
+    }
 `
 
 export const TitleContainer = styled.div`
@@ -57,5 +64,9 @@ export const TextsContainer = styled.div`
 
     .hidden {
         display: none !important;
+    }
+
+    @media screen and (max-width: 600px) {
+        max-height: 10000px;
     }
 `

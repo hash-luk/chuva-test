@@ -13,6 +13,12 @@ export const Container = styled.div`
     .showContainer {
         display: flex;
     }
+
+    @media screen and (max-width: 600px) {
+        width: 98%;
+        margin: 0;
+        padding: 5px 0px;
+    }
 `
 
 export const ContentContainer = styled.div`
@@ -33,6 +39,14 @@ export const ContentContainer = styled.div`
         font-size: 14px;
         line-height:19px;
         font-weight:400;
+    }
+
+    @media screen and (max-width: 600px) {
+        width: 100%;
+
+        p {
+            font-size: 12px;
+        }
     }
 `
 

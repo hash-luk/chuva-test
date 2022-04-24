@@ -14,6 +14,10 @@ export const Container = styled.div`
         border-image: linear-gradient(180deg, #FFB455 0%, #ED7839 100%);
         border-image-slice: 1;
     }
+
+    @media screen and (max-width: 600px) {
+        display: none;
+    }
 `;
 
 export const Sidebar = styled.div`
