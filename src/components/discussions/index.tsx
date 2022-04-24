@@ -3,6 +3,7 @@ import hand from "../../assets/icons/hand.svg";
 import qea from "../../assets/icons/Q&A.svg";
 import people from "../../assets/icons/people.svg";
 import Topic from "../topics";
+import NewTopic from "../startTopic";
 import { faAdd } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { TitleContainer } from "../resume/styles";
@@ -11,7 +12,8 @@ const Discussions = () => {
   return (
     <Styled.Container>
       <TitleContainer>Discussões</TitleContainer>
-      <Styled.ContentContainer>
+      {/* <NewTopic /> */}
+      {/* <Styled.ContentContainer>
         <Styled.SectionTitle>
           Compartilhe suas ideias ou dúvidas com os autores!
         </Styled.SectionTitle>
@@ -31,7 +33,7 @@ const Discussions = () => {
           <FontAwesomeIcon icon={faAdd} inverse className="faIcon" />
           criar tópico
         </Styled.Button>
-      </Styled.ContentContainer>
+      </Styled.ContentContainer> */}
       <Topic />
       <Topic />
     </Styled.Container>
