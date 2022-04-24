@@ -47,6 +47,7 @@ export const ActionsContainer = styled.div`
 
     .icon {
         height: 18px;
+        cursor: pointer;
     }
 
     .icon:first-child {
