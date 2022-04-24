@@ -4,6 +4,7 @@ import qea from "../../assets/icons/Q&A.svg";
 import people from "../../assets/icons/people.svg";
 import Topic from "../topics";
 import NewTopic from "../startTopic";
+import CreatedTopic from "../createdTopic";
 import { faAdd } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { TitleContainer } from "../resume/styles";
@@ -12,6 +13,7 @@ const Discussions = () => {
   return (
     <Styled.Container>
       <TitleContainer>Discussões</TitleContainer>
+      <CreatedTopic />
       {/* <NewTopic /> */}
       {/* <Styled.ContentContainer>
         <Styled.SectionTitle>
