@@ -10,12 +10,22 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { TitleContainer } from "../resume/styles";
 
 const Discussions = () => {
+  function handleClick() {
+    const newTopic = document.querySelector(".NewTopicContainer");
+    const defaultContent = document.querySelector(".defaultDiscussionContainer");
+
+    newTopic?.classList.add("showContainer");
+    defaultContent?.classList.add("hideContainer");
+  }
+
   return (
     <Styled.Container>
       <TitleContainer>Discussões</TitleContainer>
       <CreatedTopic />
-      {/* <NewTopic /> */}
-      {/* <Styled.ContentContainer>
+
+      <NewTopic />
+
+      <Styled.ContentContainer className="defaultDiscussionContainer ">
         <Styled.SectionTitle>
           Compartilhe suas ideias ou dúvidas com os autores!
         </Styled.SectionTitle>
@@ -31,11 +41,11 @@ const Discussions = () => {
           a curiosidade? Deixe seus questionamentos ou sugestões para o autor!
         </p>
 
-        <Styled.Button>
+        <Styled.Button onClick={handleClick}>
           <FontAwesomeIcon icon={faAdd} inverse className="faIcon" />
           criar tópico
         </Styled.Button>
-      </Styled.ContentContainer> */}
+      </Styled.ContentContainer>
       <Topic />
       <Topic />
     </Styled.Container>

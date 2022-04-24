@@ -19,7 +19,7 @@ const Header = () => {
                 <Styled.UserInfo>
                     <div className="texts">
                         <p>Bem Vindo</p>
-                        <p>email@example.com</p>
+                        <p>alguem12@galoascience.com</p>
                     </div>
                     <FontAwesomeIcon icon={faUserCircle} size="2x"/>
                 </Styled.UserInfo>

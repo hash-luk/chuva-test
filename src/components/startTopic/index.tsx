@@ -3,8 +3,16 @@ import { faBold,faItalic } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const NewTopic = () => {
+  function handleClick() {
+    const newTopic = document.querySelector(".NewTopicContainer");
+    const createdTopic = document.querySelector(".createdTopicContainer");
+
+    createdTopic?.classList.add("showContainer");
+    newTopic?.classList.remove("showContainer");
+  }
+
   return (
-    <Styled.Container>
+    <Styled.Container className="NewTopicContainer hideContainer">
       <p className="sectionTitle">
         Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!
       </p>
@@ -23,11 +31,12 @@ const NewTopic = () => {
               <FontAwesomeIcon icon={faBold} className="icon"/>
               <FontAwesomeIcon icon={faItalic} className="icon"/>
             </div>
-            <button className="sendButton">Enviar</button>
+            <button className="sendButton" onClick={handleClick}>Enviar</button>
           </div>
         </div>
       </div>
     </Styled.Container>
+
   );
 };
 

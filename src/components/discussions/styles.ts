@@ -5,6 +5,14 @@ export const Container = styled.div`
     right: 0;
     margin-left: 220px;
     padding: 20px 36px 4px 36px;
+
+    .hideContainer {
+        display: none;
+    }
+
+    .showContainer {
+        display: flex;
+    }
 `
 
 export const ContentContainer = styled.div`

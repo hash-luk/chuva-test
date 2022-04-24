@@ -9,7 +9,6 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
 `;
 
 export const LeftTexts = styled.div`
@@ -34,7 +33,7 @@ export const LeftTexts = styled.div`
 `
 
 export const RightContent = styled.div`
-    width: 291px;
+    width: 400px;
     height: 34px;
     display: flex;
     align-items: center;
@@ -56,7 +55,7 @@ export const SelectInput = styled.select`
 `
 
 export const UserInfo = styled.div`
-    width: 202px;
+    max-width: 300px;
     height: 100%;
     display: flex;
     align-items: center;
@@ -65,7 +64,7 @@ export const UserInfo = styled.div`
     text-align: right;
 
     .texts {
-        width: 163px;
+        width: 300px;
         height: 100%;
         display: flex;
         flex-direction: column;
