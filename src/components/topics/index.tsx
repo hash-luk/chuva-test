@@ -2,12 +2,20 @@ import * as Styled from './styles'
 import heart from '../../assets/icons/heart.svg'
 import { faEllipsisV } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { useState } from 'react'
 
 const Topic = () => {
+    const [likes,setLikes] = useState(1)
+
     function handleLike(e: React.MouseEvent<HTMLImageElement, MouseEvent>) {
         e.currentTarget.classList.toggle('active')
-    }
 
+        if(e.currentTarget.classList.contains('active')){
+            setLikes(likes + 1)
+        } else {
+            setLikes(likes - 1)
+        }
+    }
 
     return(
         <Styled.Container>
@@ -23,7 +31,7 @@ const Topic = () => {
             <Styled.ActionsContainer>
                 <FontAwesomeIcon icon={faEllipsisV} className='icon'/>
                 <img src={heart} alt="Deixe um like no tópico" className='icon like' onClick={handleLike}/> 
-                <p>1 like</p>
+                <p className='likes'>{likes} likes</p>
                 <p>1 resposta</p>
             </Styled.ActionsContainer>
         </Styled.Container>
