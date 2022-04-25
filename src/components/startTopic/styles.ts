@@ -66,6 +66,12 @@ export const Container = styled.div`
             resize: none;
             border-radius: 3px;
             border: 1px solid #CCCCCC;
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18px;
+            padding-left: 23.13px;
+            color: #4D4D4D;
         }
 
         .controls {
