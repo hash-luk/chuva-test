@@ -233,6 +233,7 @@ export const VideoContainer = styled.div`
   width: 784px;
   height: 439px;
   position: relative;
+  cursor: pointer;
 
   .filter {
     position: absolute;

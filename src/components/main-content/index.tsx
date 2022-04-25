@@ -20,6 +20,10 @@ const Main = () => {
     window.open("https://www.doi.org", "_blank");
   }
 
+  function handleVideoClick() {
+    window.open("https://www.youtube.com/watch?v=h2ftUTb098Q&t=108s", "_blank");
+  }
+
   return (
     <Styled.Container>
       <div className="left-content">
@@ -27,7 +31,7 @@ const Main = () => {
           Análise sensorial de preparações funcionais desenvolvidas para
           escolares entre 09 e 15 anos, do município de Campinas/SP{" "}
         </Styled.Title>
-        <Styled.VideoContainer>
+        <Styled.VideoContainer onClick={handleVideoClick}>
           <Styled.VideoTitle>
             Análise sensorial de preparações funcionais desenvolvidas para
             escolares entre 09 e 15 anos, do município de Campinas/SP{" "}
