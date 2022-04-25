@@ -4,7 +4,7 @@ import { useEffect, useState,useRef } from 'react'
 const Resume = () => {
     const toggleButtonMore = useRef() as React.MutableRefObject<HTMLSpanElement>
     const toggleButtonLess = useRef() as React.MutableRefObject<HTMLSpanElement>
-    const [showMore, setShowMore] = useState(false)
+    const [showMore, setShowMore] = useState(Boolean)
 
     useEffect(() => {
         const texts = document.querySelectorAll('.additional-content')
