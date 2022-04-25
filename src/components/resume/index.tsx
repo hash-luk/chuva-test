@@ -1,10 +1,10 @@
 import * as Styled from './styles'
-import { useEffect, useState,useRef } from 'react'
+import { useEffect, useState, useRef } from 'react'
 
 const Resume = () => {
     const toggleButtonMore = useRef() as React.MutableRefObject<HTMLSpanElement>
     const toggleButtonLess = useRef() as React.MutableRefObject<HTMLSpanElement>
-    const [showMore, setShowMore] = useState(Boolean)
+    const [showMore, setShowMore] = useState(false)
 
     useEffect(() => {
         const texts = document.querySelectorAll('.additional-content')
@@ -14,15 +14,15 @@ const Resume = () => {
                 text.classList.remove('hidden')
                 text.classList.add('show')
             })
-            toggleButtonMore.current.classList.toggle('show')
-            toggleButtonLess.current.classList.toggle('show')
+            toggleButtonMore.current.classList.remove('show')
+            toggleButtonLess.current.classList.add('show')
         } else {
             texts.forEach(text => {
                 text.classList.remove('show')
                 text.classList.add('hidden')
             })
-            toggleButtonMore.current.classList.toggle('show')
-            toggleButtonLess.current.classList.toggle('show')
+            toggleButtonMore.current.classList.add('show')
+            toggleButtonLess.current.classList.remove('show')
         }
     },[showMore])
 
