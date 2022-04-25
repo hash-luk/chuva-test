@@ -1,8 +1,28 @@
 import React from "react";
 import * as Styled from "./styles";
 import logo from "../../assets/img/logo.svg";
+import { useState,useEffect } from "react";
 
 const SidebarNav = () => {
+
+  const [scrollY, setScrollY] = useState(0);
+
+  const handleScroll = () => {
+    const posY = window.scrollY;
+    setScrollY(posY);
+  }
+
+  useEffect(() => {
+    const bar = document.querySelector(".sidebar")
+
+    window.addEventListener("scroll", handleScroll);
+
+    if(scrollY > 0){
+      bar?.classList.add("sidebar-fixed")
+    }
+
+  },[scrollY]);
+
   
   function handleClick(e: React.MouseEvent<HTMLAnchorElement>) {
     const buttons = document.querySelectorAll("#navButton");
@@ -16,7 +36,7 @@ const SidebarNav = () => {
 
   return (
     <Styled.Container>
-      <Styled.Sidebar>
+      <Styled.Sidebar className="sidebar">
         <Styled.Title>
           <h1>SLACA 2019</h1>
         </Styled.Title>

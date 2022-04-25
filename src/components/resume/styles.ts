@@ -23,6 +23,10 @@ export const Container = styled.div`
         }
     }
 
+    @media screen and (max-width: 1200px) {
+        margin: 50px 0px;
+    }
+
     @media screen and (max-width: 768px) {
         margin:0;
         width: 100%;

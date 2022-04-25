@@ -10,6 +10,11 @@ export const Container = styled.div`
     border-bottom: 1px solid #ccc;
     margin-bottom: 10px;
 
+
+    @media screen and (max-width: 768px) {
+        display: flex;
+    }
+
     @media screen and (max-width: 600px) {
         display: flex;
     }

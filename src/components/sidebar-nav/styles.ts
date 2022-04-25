@@ -7,12 +7,39 @@ export const Container = styled.div`
     position: absolute;
     top: 0;
 
-    
     .selected {
         border: solid;
         border-width: 0 0 0 5px;
         border-image: linear-gradient(180deg, #FFB455 0%, #ED7839 100%);
         border-image-slice: 1;
+    }
+
+    @media screen and (max-width: 1200px) {
+        width: 100vw;
+        height: 68px;
+        position: fixed;
+        display: flex;
+        flex-direction: row;
+        z-index: 999;
+
+        img {
+            display: none;
+        }
+
+        .nav-buttons {
+            width: 100%;
+        }
+
+        .selected {
+            border: solid;
+            border-width: 5px 0 0 0;
+            border-image: linear-gradient(180deg, #FFB455 0%, #ED7839 100%);
+            border-image-slice: 1;
+        }
+
+        .sidebar-fixed {
+            background-color: #FFF;
+        }
     }
 
     @media screen and (max-width: 768px) {
@@ -27,6 +54,17 @@ export const Container = styled.div`
 export const Sidebar = styled.div`
     width: 100%;
     max-height: 536px;
+
+    @media screen and (max-width: 1200px) {
+        display: flex;
+        
+        .nav-buttons {
+            width: 80%;
+            display: flex;
+            align-items: center;
+            margin-left: 10px;
+        }
+    }
 `;
 
 export const Title = styled.div`
@@ -42,6 +80,10 @@ export const Title = styled.div`
         font-size: 30px;
         font-weight: 700;
         color: #FFF;
+    }
+
+    @media screen and (max-width: 1200px) {
+        width: 220px;
     }
 `;
 

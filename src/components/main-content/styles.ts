@@ -14,6 +14,11 @@ export const Container = styled.div`
   grid-template-rows: 1fr;
   grid-template-areas: "video-content data-content";
 
+  @media screen and (max-width: 1200px) {
+    margin: 0;
+    width: 100%;
+  }
+
   @media screen and (max-width: 768px) {
     width: 100vw;
     margin: 0;
