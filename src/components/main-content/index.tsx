@@ -44,7 +44,7 @@ const Main = () => {
             </div>
           </Styled.VideoInformation>
           <div className="filter"></div>
-          <img src={coverImg} alt="Video cover" className="videocover" />
+          <img src={coverImg} alt="Capa do vídeo" className="videocover" />
         </Styled.VideoContainer>
       </div>
       <div className="right-content">
@@ -58,7 +58,7 @@ const Main = () => {
               <FontAwesomeIcon icon={faStar} inverse className="icon star" />
             </Styled.Button>
             <Styled.Button onClick={handleDOI}>
-              <img src={doiIcon} alt="Doi Icon" className="icon" />
+              <img src={doiIcon} alt="Ícone da DOI" className="icon" />
             </Styled.Button>
           </div>
           <p>COMO CITAR ESSE TRABALHO?</p>

@@ -28,7 +28,7 @@ const SidebarNav = () => {
       button.classList.remove("selected");
     });
 
-    if(e.currentTarget.innerHTML != "Trabalhos") {
+    if(e.currentTarget.innerHTML !== "Trabalhos") {
       alert("Área em desenvolvimento!");
       buttons.forEach(button => {
         if(button.innerHTML === "Trabalhos") {
@@ -47,7 +47,7 @@ const SidebarNav = () => {
         <Styled.Title>
           <h1>SLACA 2019</h1>
         </Styled.Title>
-        <img src={logo} alt="" />
+        <img src={logo} alt="Logo Slaca 13"/>
         <div className="nav-buttons">
           <Styled.Button id="navButton" onClick={handleClick}>
             Apresentação

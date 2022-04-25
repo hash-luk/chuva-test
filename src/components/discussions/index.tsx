@@ -31,9 +31,9 @@ const Discussions = () => {
         </Styled.SectionTitle>
 
         <Styled.IconsContainer>
-          <img src={hand} alt="" className="icon" />
+          <img src={hand} alt="Plante a sua ideia" className="icon" />
           <img src={qea} alt="Perguntas e respostas" className="icon" />
-          <img src={people} alt="Interaja na comunidade" className="icon" />
+          <img src={people} alt="Compartilhe Ideias" className="icon" />
         </Styled.IconsContainer>
 
         <p>

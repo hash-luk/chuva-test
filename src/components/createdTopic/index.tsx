@@ -22,7 +22,7 @@ const CreatedTopic = () => {
             <Styled.CreatedTopic>
                 <FontAwesomeIcon icon={faCheckDouble} className="icon"/>
                 <p>Aguardando feedback dos autores</p>
-                <a href="#">Editar tópico</a>
+                <a href="/">Editar tópico</a>
             </Styled.CreatedTopic>
         </Styled.Container>
 
