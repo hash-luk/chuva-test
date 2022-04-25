@@ -1,5 +1,6 @@
 import * as Styled from "./styles";
-import { faGlobe,faUserCircle } from "@fortawesome/free-solid-svg-icons";
+import globe from '../../assets/icons/globe.svg'
+import { faUserCircle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
@@ -13,8 +14,8 @@ const Header = () => {
             </Styled.LeftTexts>
             <Styled.RightContent>
                 <Styled.SelectInput>
-                    <option value="PT,BR"><FontAwesomeIcon icon={faGlobe}/>PT,BR</option>
-                    <option value="EN,US"><FontAwesomeIcon icon={faGlobe}/>EN,US</option>
+                    <option value="PT,BR">PT,BR</option>
+                    <option value="EN,US">EN,US</option>
                 </Styled.SelectInput>
                 <Styled.UserInfo>
                     <div className="texts">
