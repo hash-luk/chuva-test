@@ -116,6 +116,7 @@ export const UserInfo = styled.div`
     justify-content: center;
     gap: 6.85px;
     text-align: right;
+    position: relative;
 
     .texts {
         width: 300px;
@@ -123,6 +124,22 @@ export const UserInfo = styled.div`
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+    }
+
+    .notification {
+        background-color: red;
+        width: 12px;
+        height: 12px;
+        position: absolute;
+        color: #FFF;
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-size: 10px;
+        line-height: 12px;
+        border-radius: 50%;
+        text-align: center;
+        right: 0;
+        top: 0;
     }
 
     @media screen and (max-width: 768px) {
