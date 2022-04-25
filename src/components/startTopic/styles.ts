@@ -142,4 +142,12 @@ export const ErrorModal = styled.div`
     border: 1px solid #CCCCCC;
     border-radius: 4px;
     transition: all 0.3s ease;
+
+    @media screen and (max-width: 768px) {
+        left: 0;
+    }
+
+    @media screen and (max-width: 600px) {
+        left: 0;
+    }
 `
