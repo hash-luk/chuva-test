@@ -11,6 +11,12 @@ export const Container = styled.div`
         height: 100%;
     }
 
+    @media screen and (max-width: 768px) {
+        max-width: 95vw;
+        margin:0;
+        padding:0;
+    }
+
     @media screen and (max-width: 600px) {
         max-width: 95vw;
         margin:0;

@@ -14,6 +14,14 @@ export const Container = styled.div`
         display: flex;
     }
 
+    @media screen and (max-width: 768px) {
+        width: 98%;
+        margin: 0;
+        padding: 5px 0px;
+    }
+
+
+
     @media screen and (max-width: 600px) {
         width: 98%;
         margin: 0;
@@ -39,6 +47,10 @@ export const ContentContainer = styled.div`
         font-size: 14px;
         line-height:19px;
         font-weight:400;
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
     }
 
     @media screen and (max-width: 600px) {

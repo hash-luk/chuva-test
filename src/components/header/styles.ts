@@ -10,6 +10,12 @@ export const Container = styled.div`
     align-items: center;
     justify-content: space-between;
 
+    @media screen and (max-width: 768px) {
+        width: 100vw;
+        margin:0;
+        padding: 10px 5px;
+    }
+
     @media screen and (max-width: 600px) {
         margin:0;
         width: 100vw;
@@ -37,6 +43,13 @@ export const LeftTexts = styled.div`
         line-height: 26px;
     }
 
+    @media screen and (max-width: 768px) {
+        .main-title {
+            font-size: 18px;
+            line-height: 22px;
+        }
+    }
+
     @media screen and (max-width: 600px) {
         .main-title {
             font-size: 18px;
@@ -54,11 +67,14 @@ export const RightContent = styled.div`
     font-family: 'Quicksand', sans-serif;
     gap: 22px;
 
+    @media screen and (max-width: 768px) {
+        width: 100px;
+    }
+
+
     @media screen and (max-width: 600px) {
         display: flex;
         width: 100px;
-
-
     }
 `
 
@@ -72,6 +88,10 @@ export const SelectInput = styled.select`
     font-size: 14px;
     line-height: 10px;
     color: #333333;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
 
     @media screen and (max-width: 600px) {
         display: none;
@@ -93,6 +113,16 @@ export const UserInfo = styled.div`
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+    }
+
+    @media screen and (max-width: 768px) {
+        .texts {
+            display: none;
+        }
+
+        .icon {
+            margin-left: 50px;
+        }
     }
 
     @media screen and (max-width: 600px) {

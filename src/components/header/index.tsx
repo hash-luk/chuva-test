@@ -21,7 +21,7 @@ const Header = () => {
                         <p>Bem Vindo</p>
                         <p>alguem12@galoascience.com</p>
                     </div>
-                    <FontAwesomeIcon icon={faUserCircle} size="2x"/>
+                    <FontAwesomeIcon icon={faUserCircle} size="2x" className="icon"/>
                 </Styled.UserInfo>
             </Styled.RightContent>
         </Styled.Container>

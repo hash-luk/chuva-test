@@ -23,6 +23,13 @@ export const Container = styled.div`
         }
     }
 
+    @media screen and (max-width: 768px) {
+        margin:0;
+        width: 100%;
+        margin-top: 60px;
+        padding: 5px 5px;
+    }
+
     @media screen and (max-width: 600px) {
         margin:0;
         width: 100%;
@@ -64,6 +71,10 @@ export const TextsContainer = styled.div`
 
     .hidden {
         display: none !important;
+    }
+
+    @media screen and (max-width: 768px) {
+        max-height: 10000px;
     }
 
     @media screen and (max-width: 600px) {

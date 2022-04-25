@@ -14,6 +14,29 @@ export const Container = styled.div`
   grid-template-rows: 1fr;
   grid-template-areas: "video-content data-content";
 
+  @media screen and (max-width: 768px) {
+    width: 100vw;
+    margin: 0;
+    padding: 10px 5px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    gap: 15px;
+
+    .left-content {
+      width: 98%;
+      display: flex;
+      flex-direction:column;
+      gap: 20px;
+    }
+
+    .right-content {
+      width: 98%;
+      display: flex;
+    }
+  }
+
+
   @media screen and (max-width:600px){
     width: 100vw;
     margin: 0;
@@ -108,6 +131,19 @@ export const ButtonsContainer = styled.div`
     margin-bottom: 5px;
   }
 
+  @media screen and (max-width: 768px) {
+    width: 50vw;
+    height: 150px;
+    align-items: flex-start;
+
+    .buttons-elements {
+      height: 100%;
+      width: 100%;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
   @media screen and (max-width:600px){
     width: 50vw;
     height: 150px;
@@ -170,6 +206,12 @@ export const DetailsContainer = styled.div`
     }
   }
 
+  @media screen and (max-width: 768px) {
+    width: 50vw;
+    justify-content: center;
+    height: 100%;
+  }
+
   @media screen and (max-width:600px){
     width: 50vw;
     justify-content: center;
@@ -195,6 +237,14 @@ export const VideoContainer = styled.div`
     height: 100%;
     object-fit: cover;
     position: absolute;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+
+.videocover {
+  object-fit: fill;
+}
   }
 
   @media screen and (max-width:600px) {
