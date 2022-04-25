@@ -8,6 +8,7 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: flex-start;
     gap: 22px;
+    position: relative;
 
     .inputs {
         width: 100%;
@@ -108,6 +109,31 @@ export const Container = styled.div`
         }
     }
 
+    .show {
+        display: flex;
+    }
 
+    .hidden {
+        display: none;
+    }
+`
 
+export const ErrorModal = styled.div`
+    width: 700px;
+    height: 300px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ED7839;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    transition: all 0.3s ease;
 `

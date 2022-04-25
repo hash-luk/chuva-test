@@ -13,9 +13,6 @@ const CreatedTopic = () => {
         newTopic?.classList.add("showContainer");
       }
 
-
-
-
     return(
         <Styled.Container className='createdTopicContainer hideContainer'>
             <Styled.SendedTopic>Seu tópico foi enviado com sucesso! :D</Styled.SendedTopic>
