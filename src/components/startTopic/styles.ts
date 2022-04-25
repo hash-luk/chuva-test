@@ -70,7 +70,7 @@ export const Container = styled.div`
             font-weight: 400;
             font-size: 14px;
             line-height: 18px;
-            padding-left: 23.13px;
+            padding:7px 23.13px;
             color: #4D4D4D;
         }
 

@@ -33,6 +33,7 @@ export const TopicTitle = styled.p`
     font-size: 16px;
     line-height: 20px;
     color: #ED7839;
+    cursor: pointer;
 `
 
 export const Author = styled.p`
@@ -72,6 +73,13 @@ export const ActionsContainer = styled.div`
     .icon:last-child {
         width: 17px;
     }
+
+    .active {
+        transform: scale(1.1);
+        filter: invert(98%) sepia(94%) saturate(793%) hue-rotate(330deg) brightness(94%) contrast(99%);
+    }
+
+
     p {
         font-family: "Roboto", sans-serif;
         font-weight: 300;

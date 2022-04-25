@@ -125,6 +125,11 @@ export const ButtonsContainer = styled.div`
     color: #ffffff;
   }
 
+  .star--active {
+    transform: scale(1.1);
+    color: #F0DC82;
+  }
+
   p {
     font-family: "Roboto", sans-serif;
     font-size: 14px;

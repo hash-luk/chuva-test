@@ -5,6 +5,7 @@ export const Container = styled.div`
     height: 181px;
     margin: 50px 0px 0px 220px;
     padding: 0px 46px 0px 14px;
+    cursor: pointer;
 
     img {
         width: 100%;

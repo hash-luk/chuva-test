@@ -10,6 +10,16 @@ const Main = () => {
     window.open("https://www.soundczech.cz/temp/lorem-ipsum.pdf", "_blank");
   }
 
+  function handleFavourite() {
+      const star = document.querySelector(".star");
+
+      star?.classList.toggle("star--active");
+  }
+
+  function handleDOI() {
+    window.open("https://www.doi.org", "_blank");
+  }
+
   return (
     <Styled.Container>
       <div className="left-content">
@@ -44,10 +54,10 @@ const Main = () => {
               <FontAwesomeIcon icon={faDownload} inverse className="icon" />
               Download
             </Styled.Button>
-            <Styled.Button>
-              <FontAwesomeIcon icon={faStar} inverse className="icon" />
+            <Styled.Button onClick={handleFavourite}>
+              <FontAwesomeIcon icon={faStar} inverse className="icon star" />
             </Styled.Button>
-            <Styled.Button>
+            <Styled.Button onClick={handleDOI}>
               <img src={doiIcon} alt="Doi Icon" className="icon" />
             </Styled.Button>
           </div>

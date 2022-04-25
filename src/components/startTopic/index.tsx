@@ -28,6 +28,9 @@ const NewTopic = () => {
 
       inputAbout.current.value = "";
       inputMatter.current.value = "";
+      
+      setAbout("");
+      setMatter("");
     }
   }
 

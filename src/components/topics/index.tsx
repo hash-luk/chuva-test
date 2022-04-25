@@ -4,6 +4,11 @@ import { faEllipsisV } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Topic = () => {
+    function handleLike(e: React.MouseEvent<HTMLImageElement, MouseEvent>) {
+        e.currentTarget.classList.toggle('active')
+    }
+
+
     return(
         <Styled.Container>
             <div className='topic-title'>
@@ -17,7 +22,7 @@ const Topic = () => {
             </div>
             <Styled.ActionsContainer>
                 <FontAwesomeIcon icon={faEllipsisV} className='icon'/>
-                <img src={heart} alt="Deixe um like no tópico" className='icon'/> 
+                <img src={heart} alt="Deixe um like no tópico" className='icon like' onClick={handleLike}/> 
                 <p>1 like</p>
                 <p>1 resposta</p>
             </Styled.ActionsContainer>
