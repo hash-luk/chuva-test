@@ -111,6 +111,7 @@ export const Container = styled.div`
                 background: linear-gradient(180deg, #FEB154 0%, #F1833E 100%);
                 border-radius: 0px 0px 4px 0px;
                 cursor: pointer;
+                user-select: none;
             }
         }
     }
