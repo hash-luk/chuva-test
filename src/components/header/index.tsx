@@ -1,12 +1,13 @@
 import * as Styled from "./styles";
-// !import globe from '../../assets/icons/globe.svg'
-import { faUserCircle } from "@fortawesome/free-solid-svg-icons";
+import { faUserCircle, faGlobe} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useState,useEffect } from "react";
+import React, { useState,useEffect} from "react";
 
 
-const Header = () => {
+const Header = () => {;
+
     const [notifications, setNotifications] = useState(2);
+
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -20,6 +21,13 @@ const Header = () => {
         return () => clearInterval(interval);
     },[notifications])
 
+    function handleClick() {
+        const secondOption = document.querySelector(".secondOption");
+
+
+        secondOption?.classList.toggle("show");
+    }
+
 
 
     return(
@@ -30,10 +38,11 @@ const Header = () => {
                 <p>ISSN: 1234-5678</p>
             </Styled.LeftTexts>
             <Styled.RightContent>
-                <Styled.SelectInput>
-                    <option value="PT,BR">PT,BR</option>
-                    <option value="EN,US">EN,US</option>
-                </Styled.SelectInput>
+                <Styled.SelectInputContainer>
+                    <Styled.SelectInput type="text" name="language" />
+                    <Styled.InputLabel htmlFor="language" onClick={handleClick}><FontAwesomeIcon icon={faGlobe} />PT,BR</Styled.InputLabel>
+                    <Styled.InputLabel htmlFor="language" className="secondOption"><FontAwesomeIcon icon={faGlobe} />EN,US</Styled.InputLabel>
+                </Styled.SelectInputContainer>
                 <Styled.UserInfo>
                     <div className="texts">
                         <p>Bem Vindo</p>

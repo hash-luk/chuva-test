@@ -39,13 +39,11 @@ const NewTopic = () => {
 
   function handleBoldButton() {
     setBold(!bold);
-
     bold ? inputMatter.current.style.fontWeight = "bold" : inputMatter.current.style.fontWeight = "normal";
   }
 
   function handleItalicButton() {
     setItalic(!italic);
-
     italic ? inputMatter.current.style.fontStyle = "italic" : inputMatter.current.style.fontStyle = "normal";
   }
 
