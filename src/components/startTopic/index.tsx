@@ -6,6 +6,9 @@ import { useState, useRef } from "react";
 const NewTopic = () => {
   const [about, setAbout] = useState("");
   const [matter, setMatter] = useState("");
+  const [bold, setBold] = useState(false);
+  const [italic, setItalic] = useState(false);
+
   const inputAbout = useRef() as React.MutableRefObject<HTMLInputElement>;
   const inputMatter = useRef() as React.MutableRefObject<HTMLTextAreaElement>;
 
@@ -32,6 +35,18 @@ const NewTopic = () => {
       setAbout("");
       setMatter("");
     }
+  }
+
+  function handleBoldButton() {
+    setBold(!bold);
+
+    bold ? inputMatter.current.style.fontWeight = "bold" : inputMatter.current.style.fontWeight = "normal";
+  }
+
+  function handleItalicButton() {
+    setItalic(!italic);
+
+    italic ? inputMatter.current.style.fontStyle = "italic" : inputMatter.current.style.fontStyle = "normal";
   }
 
   return (
@@ -66,8 +81,8 @@ const NewTopic = () => {
           ></textarea>
           <div className="controls">
             <div className="text-edit">
-              <FontAwesomeIcon icon={faBold} className="icon" />
-              <FontAwesomeIcon icon={faItalic} className="icon" />
+              <FontAwesomeIcon icon={faBold} className="icon" onClick={handleBoldButton}/>
+              <FontAwesomeIcon icon={faItalic} className="icon" onClick={handleItalicButton}/>
             </div>
             <button className="sendButton" onClick={handleClick}>
               Enviar
