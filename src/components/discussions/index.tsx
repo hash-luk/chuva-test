@@ -5,9 +5,11 @@ import people from "../../assets/icons/people.svg";
 import Topic from "../topics";
 import NewTopic from "../startTopic";
 import CreatedTopic from "../createdTopic";
+import ExpandTopics from '../expandTopics/'
 import { faAdd } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { TitleContainer } from "../resume/styles";
+import { answers } from '../../data/answers'
 
 const Discussions = () => {
   function handleClick() {
@@ -48,6 +50,10 @@ const Discussions = () => {
       </Styled.ContentContainer>
       <Topic />
       <Topic />
+
+      {answers.map(answer => (
+                <ExpandTopics user={answer.user} answer={answer.answer} userType={answer.userType} contentType={answer.contentType}   key={answer.id}/>
+        ))}
     </Styled.Container>
   );
 };

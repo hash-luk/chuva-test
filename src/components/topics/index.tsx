@@ -4,6 +4,8 @@ import { faEllipsisV } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useState } from 'react'
 
+
+
 const Topic = () => {
     const [likes,setLikes] = useState(1)
 
@@ -17,8 +19,14 @@ const Topic = () => {
         }
     }
 
+    // function expandTopic() {
+    //     aswers.map(answer => (
+    //         <ExpandTopics user={answer.user} answer={answer.answer} userType={answer.userType} key={answer.id}/>
+    //     ))
+    // }
+
     return(
-        <Styled.Container>
+        <Styled.Container className='main-container'>
             <div className='topic-title'>
                 <Styled.TopicTitle>Assunto da pergunta aparece aqui</Styled.TopicTitle>
                 <Styled.Author>Carlos Henrique Santos</Styled.Author>
@@ -34,6 +42,7 @@ const Topic = () => {
                 <p className='likes'>{likes} likes</p>
                 <p>1 resposta</p>
             </Styled.ActionsContainer>
+
         </Styled.Container>
     )
 }
