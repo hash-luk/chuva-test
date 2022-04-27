@@ -8,6 +8,7 @@ export const ImportantContainer = styled.div`
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
+  display: none;
 
   .content {
     width: 100%;

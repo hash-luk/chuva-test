@@ -11,7 +11,21 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { TitleContainer } from "../resume/styles";
 import { answers } from '../../data/answers'
 
+
+export const hideAllTopics = () => {
+  const expandedTopicsContainers = document.querySelectorAll(".expandedTopics");
+
+  expandedTopicsContainers.forEach((container: any) => {
+    container.classList.toggle("showContainer");
+  });
+}
+
 const Discussions = () => {
+
+  const TopicsShow = (answer:any) => (
+    <ExpandTopics user={answer.user} answer={answer.answer} userType={answer.userType} contentType={answer.contentType}   key={answer.id}/>
+  )
+
   function handleClick() {
     const newTopic = document.querySelector(".NewTopicContainer");
     const defaultContent = document.querySelector(".defaultDiscussionContainer");
@@ -24,9 +38,7 @@ const Discussions = () => {
     <Styled.Container>
       <TitleContainer>Discussões</TitleContainer>
       <CreatedTopic />
-
       <NewTopic />
-
       <Styled.ContentContainer className="defaultDiscussionContainer ">
         <Styled.SectionTitle>
           Compartilhe suas ideias ou dúvidas com os autores!
@@ -50,10 +62,9 @@ const Discussions = () => {
       </Styled.ContentContainer>
       <Topic />
       <Topic />
-
       {answers.map(answer => (
-                <ExpandTopics user={answer.user} answer={answer.answer} userType={answer.userType} contentType={answer.contentType}   key={answer.id}/>
-        ))}
+                TopicsShow(answer)
+      ))}
     </Styled.Container>
   );
 };

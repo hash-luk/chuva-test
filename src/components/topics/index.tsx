@@ -3,8 +3,7 @@ import heart from '../../assets/icons/heart.svg'
 import { faEllipsisV } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useState } from 'react'
-
-
+import {hideAllTopics} from '../discussions'
 
 const Topic = () => {
     const [likes,setLikes] = useState(1)
@@ -19,16 +18,10 @@ const Topic = () => {
         }
     }
 
-    // function expandTopic() {
-    //     aswers.map(answer => (
-    //         <ExpandTopics user={answer.user} answer={answer.answer} userType={answer.userType} key={answer.id}/>
-    //     ))
-    // }
-
     return(
         <Styled.Container className='main-container'>
             <div className='topic-title'>
-                <Styled.TopicTitle>Assunto da pergunta aparece aqui</Styled.TopicTitle>
+                <Styled.TopicTitle onClick={hideAllTopics} >Assunto da pergunta aparece aqui</Styled.TopicTitle>
                 <Styled.Author>Carlos Henrique Santos</Styled.Author>
             </div>
             <div className='content'>
@@ -40,7 +33,7 @@ const Topic = () => {
                 <FontAwesomeIcon icon={faEllipsisV} className='icon'/>
                 <img src={heart} alt="Deixe um like no tópico" className='icon like' onClick={handleLike}/> 
                 <p className='likes'>{likes} likes</p>
-                <p>1 resposta</p>
+                <p>4 respostas</p>
             </Styled.ActionsContainer>
 
         </Styled.Container>

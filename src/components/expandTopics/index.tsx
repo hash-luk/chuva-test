@@ -1,6 +1,5 @@
 import * as Styled from "./styles";
 import { Author, ContentText } from "../topics/styles";
-import { useEffect } from "react";
 import { faCheckDouble } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -13,7 +12,7 @@ type TopicsProps = {
 
 const ExpandTopics = (props: TopicsProps) => {
   return (
-    <Styled.ImportantContainer>
+    <Styled.ImportantContainer className="expandedTopics">
       <div className={`content ${props.contentType}`}>
         <Author className={`topic--header ${props.userType}`}>
           {props.user}
