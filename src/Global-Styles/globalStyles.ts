@@ -12,6 +12,7 @@ export const GlobalStyle = createGlobalStyle`
 
     body {
         overflow-x: hidden;
+        background-color:#E5E5E5;
     }
 
     .App {
