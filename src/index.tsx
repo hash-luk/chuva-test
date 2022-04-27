@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
 import { GlobalStyle } from './Global-Styles/globalStyles';
 
 const root = ReactDOM.createRoot(
@@ -13,5 +12,3 @@ root.render(
     <GlobalStyle />
   </React.StrictMode>
 );
-
-reportWebVitals();
