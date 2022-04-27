@@ -75,4 +75,12 @@ export const ImportantContainer = styled.div`
   .topic--content {
     width: 80%;
   }
+
+  @media screen and (max-width: 768px) {
+    height: 210px;
+  }
+
+  @media screen and (max-width: 600px) {
+    height: 210px;
+  }
 `;
